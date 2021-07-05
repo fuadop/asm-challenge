@@ -34,13 +34,13 @@ const Card = (props) => {
       <div className='row'>
         <div className='col-8'>
           <ul className='d-flex list-unstyled my-4 mx-5'>
-            {(new Array(ratings).fill(0)).map(() => (
-              <li style={styleSheet.starPadding}>
+            {(new Array(ratings).fill(0)).map((item, index) => (
+              <li style={styleSheet.starPadding} key={index}>
                 <i className='ri-star-fill ri-1x' style={styleSheet.filledStar}></i>
               </li>
             ))}
-            {(new Array(5 - ratings).fill(0)).map(() => (
-              <li style={styleSheet.starPadding}>
+            {(new Array(5 - ratings).fill(0)).map((item, index) => (
+              <li style={styleSheet.starPadding} key={index}>
                 <i className='ri-star-line ri-1x' style={styleSheet.unFilledStar}></i>
               </li>
             ))}

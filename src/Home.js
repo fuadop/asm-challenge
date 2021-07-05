@@ -16,7 +16,7 @@ const Home = () => {
     <div className='container py-3'>
       <div className='row'>
           {foods.map(food => (
-            <div className='col-md-4 col-6'>
+            <div className='col-md-4 col-6' key={food.id}>
               <Card
                 {...food}
               />

@@ -16,7 +16,7 @@ const Card = (props) => {
         <img src={strMealThumb} alt='banner' style={styleSheet.bannerImage} />
       </div>
       <div className='container'>
-        <div className='row'>
+        <div className='row font-weight-bold'>
           <div className='col-8'>
             <h4>{ strMeal }</h4>
           </div>
@@ -25,7 +25,7 @@ const Card = (props) => {
           </div>
         </div>
         <div>
-          <p>Served with french fried + drink</p>
+          <p>Served with french fries + drink</p>
         </div>
         <div>
           <p style={styleSheet.description} className='text-truncate'>{ description }</p>
